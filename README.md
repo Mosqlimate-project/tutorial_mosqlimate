@@ -11,15 +11,28 @@ The objective of this tutorial is to provide a complete example of how the platf
 
 
 The first step is to clone this repo in your personal GitHub account. You can see an example of cloning a repository [here](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository). 
-Also, it's necessary to create an account on the [platform](https://api.mosqlimate.org/). It's really simple; you can log in with your own GitHub account. 
+Also, it's necessary to create an account on the [platform](https://api.mosqlimate.org/). It's straightforward; you can log in with your own GitHub account. 
 
 After creating an account, let's start to build the model. The first step is obtaining the notebook data: `get_data_from_mosqlimate.ipynb`. 
 
 After that, run the notebook: `train_and_gen_predictions.ipynb`. In this notebook, we will run the model and generate the predictions that will be sent to the platform. 
 
-Now that we create our first prediction let's register or model using the `Post model in the database.ipynb` notebook. 
+Now that we have created our first prediction let's register or model using the `Post model in the database.ipynb` notebook. 
 
-Now that you registered your model let's send the first predictions using the `post predictions.ipynb` notebook. 
+Now that you have registered your model let's send the first predictions using the `post predictions.ipynb` notebook.
 
 
+After sending the predictions, you will be able to visualize your predictions in the platform as shown below: 
+
+<img width="1397" alt="Captura de Tela 2023-12-15 às 10 55 20" src="https://github.com/eduardocorrearaujo/tutorial_mosqlimate/assets/65051489/f60cdd34-f2ec-4c0b-9985-52d985dd391f">
+
+
+You can also go ahead and compare your predictions with others saved on the platform. To have access to a list of the predictions associated with a geocode, click on predictions as highlighted below and select the predictions from other models: 
+<img width="1390" alt="Captura de Tela 2023-12-15 às 10 57 22" src="https://github.com/eduardocorrearaujo/tutorial_mosqlimate/assets/65051489/864ea0fb-d975-4e26-a97d-1c99a9782ce9">
+
+After that, the predictions will be shown by gray lines in the left panel. Hovering with the mouse over one will highlight them in the left panel and display the prediction interval on the right panel:
+<img width="1404" alt="Captura de Tela 2023-12-15 às 10 59 37" src="https://github.com/eduardocorrearaujo/tutorial_mosqlimate/assets/65051489/52138aec-2041-421d-954d-deb6f4e0b1a6">
+
+
+If you want to retrieve the predictions on the platform as dataframes, look at the `retrieve_predictions.ipynb` notebook.
 
